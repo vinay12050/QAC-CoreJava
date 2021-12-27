@@ -1,20 +1,13 @@
-package com.qac.coreJava.finalKeyword.finalMethod;
+package com.qac.coreJava.abstraction.abstractKey;
 
-public class RBIBank {
+public abstract class RBIBank {
 	
-	String branch;
-	String ifscCode;
+	int interest=9;
 	
-	public final void printNotes() {
-		System.out.println("RBI is printing Notes");
+	public RBIBank() {
+		System.out.println("RBI Bank Called..");
 	}
 	
-	public void head() {
-		System.out.println("RBI is head of all the Banks");
-	}
-	
-	public final void location() {
-		System.out.println("The Bank is located in India....");
-	}
+	public abstract void fixedInterest();
 
 }
